@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Уебсайт на организацията с информация за дейности, новини и контакти">
+    <meta name="keywords" content="организация, услуги, новини, контакти, галерия">
+    <meta name="author" content="Вашето име">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Събития | Креативни умове</title>
+    <link rel="stylesheet" href="stylekursova.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+
+              }
+              .first-image {
+            display: block;
+            margin: 0 auto;
+            width: 60%; 
+            max-width: 600px;
+        }
+        .second-image {
+            display: block;
+            margin: 0 auto;
+            width: 60%; /
+            max-width: 600px;
+        }
+         .eventupcoming{
+            border: 2px solid purple;
+            padding: 10px;
+            display: inline-block;
+        }
+        .eventpast{
+            border: 2px solid purple;
+            padding: 10px;
+            display: inline-block;
+        }
+          </style>
+      
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div style="display: flex; align-items: center;">
+        <img src="D:/University/Уеб технологии/logo.png" alt="Лого" style="margin-right: 3px; border-radius: 3px; width: 100px; height: auto;">
+            <h1 class="logo">Креативни умове</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="kursova.html">Начало</a></li>
+                    <li><a href="#about">За нас</a></li>
+                    <li><a href="kursove.html">Курсове</a></li>
+                    <li><a href="event.html">Събития</a></li>
+                    <li><a href="history.html">История</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="events">
+            <div class="container">
+                <h2>Нашите Събития</h2>
+                <p>Вижте най-новите събития, организирани от "Креативни умове".</p>
+                
+                
+                <div class="eventupcoming">
+                    <h2>Работилница по дигитално изкуство</h2>
+                    <p><strong>Дата:</strong> 15 декември 2024</p>
+                    <p><strong>Място:</strong> Център "Креативни умове", София</p>
+                    <p>Заповядайте на работилница, където ще научите основи на дигиталното рисуване и дизайн. Подходящо за начинаещи!</p>
+                    <img src="D:/University/Уеб технологии/digitalart.jpg" alt="Снимка, символизираща креативност" class="first-image">
+                </div>
+
+                
+                <div class="eventpast">
+                    <h2>Фестивал "Дни на креативността"</h3>
+                    <p><strong>Дата:</strong> 10 ноември 2024</p>
+                    <p><strong>Място:</strong> Градска галерия, Пловдив</p>
+                    <p>Фестивалът събра творци от цялата страна за три дни, изпълнени с изкуство, музика и работилници.</p>
+                    <img src="D:/University/Уеб технологии/creative.jpg" alt="Снимка, символизираща креативност" class="second-image">
+                </div>
+            </div>
+    
+        </section>
+
+        
+        <section class="registration">
+            <div class="container">
+                <h2>Регистрация за събитие</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Име и фамилия:</label>
+                        <input type="text" id="name" name="name" placeholder="Вашето име" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Имейл адрес:</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event">Изберете събитие:</label>
+                        <select id="event" name="event" required>
+                            <option value="" disabled selected>Изберете събитие</option>
+                            <option value="digital-art">Работилница по дигитално изкуство</option>
+                            <option value="creativity-days">Фестивал "Дни на креативността"</option>
+                            <option value="ceramics">Курс по керамика</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Допълнителни въпроси или изисквания:</label>
+                        <textarea id="message" name="message" placeholder="Напишете вашето съобщение"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Изпрати</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+               <ul>
+                    <li><a href="kursova.html">Начало</a></li>
+                    <li><a href="#about">За нас</a></li>
+                    <li><a href="kursove.html">Курсове</a></li>
+                    <li><a href="event.html">Събития</a></li>
+                    <li><a href="history.html">История</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+            <p>© 2024 Креативни умове. Всички права запазени.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Уебсайт на организацията с информация за дейности, новини и контакти">
+    <meta name="keywords" content="организация, услуги, новини, контакти, галерия">
+    <meta name="author" content="Вашето име">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс: Дигитално рисуване | Креативни умове</title>
+    <link rel="stylesheet" href="stylekursova.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+
+
+
+              }
+          </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div style="display: flex; align-items: center;">
+        <img src="D:/University/Уеб технологии/logo.png" alt="Лого" style="margin-right: 3px; border-radius: 3px; width: 100px; height: auto;">
+            <h1 class="logo">Креативни умове</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="kursova.html">Начало</a></li>
+                    <li><a href="#about">За нас</a></li>
+                    <li><a href="kursove.html">Курсове</a></li>
+                    <li><a href="event.html">Събития</a></li>
+                    <li><a href="history.html">История</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="course">
+            <div class="container">
+                <h2>Курс: Дигитално рисуване</h2>
+                <img src="D:/University/Уеб технологии/digital.jpg" alt="Пример за дигитално рисуване" class="course-image">
+                <p><strong>Описание:</strong> Научете основите на дигиталното рисуване с нашия интерактивен курс! 
+                   Подходящ както за начинаещи, така и за тези, които искат да подобрят своите умения. 
+                   Ще използваме професионални софтуери като Photoshop и Procreate.</p>
+                <p><strong>График:</strong> 
+                   Курсът започва на <em>15 януари 2025</em> и продължава 8 седмици. 
+                   Занятията са всяка сряда и петък от <em>18:00 до 20:00</em>.</p>
+                <p><strong>Цена:</strong> 200 лв. (включва всички материали и достъп до онлайн ресурси)</p>
+                <p><strong>Място:</strong> Център „Креативни умове“, София</p>
+                <a href="#" class="btn">Регистрирай се сега</a>
+            </div>
+        </section>
+        <section class="registration">
+            <div class="container">
+                <h3>Регистрация за курса</h3>
+                <form action="#" method="post" class="registration-form">
+                    <label for="name">Име и фамилия:</label>
+                    <input type="text" id="name" name="name" required placeholder="Вашето име">
+                    
+                    <label for="email">Имейл адрес:</label>
+                    <input type="email" id="email" name="email" required placeholder="Вашият имейл">
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Вашият телефон">
+
+                    <label for="message">Допълнителна информация (по избор):</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Имате ли въпроси?"></textarea>
+                    
+                    <button type="submit" class="btn">Изпрати</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+               <ul>
+                    <li><a href="kursova.html">Начало</a></li>
+                    <li><a href="#about">За нас</a></li>
+                    <li><a href="kursove.html">Курсове</a></li>
+                    <li><a href="event.html">Събития</a></li>
+                    <li><a href="history.html">История</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+            <p>© 2024 Креативни умове. Всички права запазени.</p>
+        </div>
+    </footer>
+     <script>
+    
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Спира стандартното поведение на формуляра
+            alert('Благодарим Ви! Вашата регистрация беше изпратена успешно.');
+            this.reset(); // Изчиства формуляра след изпращане
+        });
+    </script>
+</body>
+</html>
